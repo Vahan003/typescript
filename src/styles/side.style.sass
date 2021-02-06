@@ -1,0 +1,59 @@
+$side-color: #FFE4D6
+$icon-color: #e1aa98
+$icon-active: #8964d7
+
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+.side
+    position: fixed
+    display: flex
+    height: 100vh
+    background: $side-color
+    width: 10%
+    min-width: 7.4rem
+    z-index: 3
+
+    .nav
+        position: absolute
+        display: flex
+        flex-direction: column
+        margin-top: 4rem
+        width: 100%
+        .sectionIco
+            position: relative
+            display: flex
+            flex-direction: row
+            justify-content: center
+            margin-bottom: 3.9rem
+            width: 3rem
+            height: 3rem
+            width: 100%
+
+        .sectionIco svg.ico
+            fill: $icon-color
+            cursor: pointer
+
+        .sectionIco.active svg.ico
+            fill: $icon-active
+
+        .sectionIco .line
+            display: none
+
+        .sectionIco.active .line
+            position: absolute
+            display: flex
+            stroke: $icon-active
+            left: 0
+
+@media only screen and (max-width: 50rem)
+    .side
+        position: fixed
+        display: flex
+        height: 100vh
+        background: $side-color
+        width: 15%
+        min-width: 4rem
+        z-index: 3

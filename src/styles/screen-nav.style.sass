@@ -1,0 +1,50 @@
+$nav-text-color: #CBB1A2
+$nav-tect-active: #6749A5
+
+
+
+.screen-nav
+    position: fixed
+    width: 90%
+    display: flex
+    justify-content: space-between
+    padding: 3.9rem 5% 0 5%
+    z-index: 2
+    backdrop-filter: blur(1.5rem)
+
+    .title
+        font-size: 3rem
+        font-weight: 400
+        line-height: 3.7rem
+    .nav-section
+        align-self: center
+        display: flex
+        font-size: 1.5rem
+        font-weight: 700
+        color: $nav-text-color
+    
+        .screen-li
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 2rem
+
+        .screen-li.active
+            color: $nav-tect-active
+        .screen-li-text
+            cursor: pointer
+        .screen-li.active .line-screen
+            stroke: $nav-tect-active
+
+
+@media only screen and (max-width: 50rem)
+    .screen-nav
+        position: fixed
+        width: 90%
+        min-width: 30rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 3.9rem 5% 0 5%
+        z-index: 2
+        backdrop-filter: blur(1.5rem)
