@@ -8,13 +8,13 @@ const Courses: React.FC = () => {
     }
     const cards: Array<any> = [
         {
-            url: "/images/banana.png",
+            url: "./images/banana.png",
             title: "Illustration",
             durationTime: "134 min",
             lessonCount: "24 lessons",
         },
         {
-            url: "/images/building.png",
+            url: "./images/building.png",
             title: "Graphic design",
             durationTime: "236 min",
             lessonCount: "30 lessons",
